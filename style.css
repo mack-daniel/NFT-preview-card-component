@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Outfit", sans-serif;
+}
+body {
+  background-color: hsl(217, 54%, 11%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.d-flex {
+  display: flex;
+}
+.light-hover:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+.card {
+  width: 25rem;
+  background-color: hsl(216, 50%, 16%);
+  padding: 1rem;
+  border-radius: 10px;
+  color: hsl(0, 0%, 100%);
+}
+.card-header {
+  position: relative;
+}
+.card-header img {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+.card-header .overlay {
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: hsl(178, 100%, 50%);
+  border-radius: 10px;
+  margin-bottom: 20px;
+  z-index: 10;
+}
+.card-header .overlay img {
+  height: 3rem;
+  width: 3rem;
+}
+.card-header:hover .overlay {
+  opacity: 0.685;
+  cursor: pointer;
+}
+
+.card-content > * {
+  margin: 15px 0;
+}
+.card-content h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.card-content p,
+.card-footer p {
+  color: hsl(215, 51%, 70%);
+  font-weight: 300;
+}
+.details {
+  justify-content: space-between;
+  align-items: center;
+}
+.details img {
+  margin-right: 10px;
+}
+.card-footer {
+  align-items: center;
+  height: 3rem;
+  padding: 10px;
+  border-top: 1px solid hsl(215, 32%, 27%);
+}
+.card-footer img {
+  height: 100%;
+  margin-right: 20px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
